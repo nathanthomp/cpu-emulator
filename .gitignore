@@ -1,0 +1,6 @@
+.git
+.vs
+x64
+cpu-emulator/cpu-emulator.vcxproj.filters
+cpu-emulator/cpu-emulator.vcxproj.user
+cpu-emulator/x64
