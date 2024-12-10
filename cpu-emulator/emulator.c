@@ -47,11 +47,8 @@ typedef struct {
 	uint16_t parameters : 12;
 } instruction;
 
-
-// TODO: 
-
-
-enum {
+enum opcodes {
+	
 						// Memory I/O - <opcode> <reg> <value/address>
 	OPCODE_LOAD,		// Operation to load data into a register from memory
 	OPCODE_SAVE,		// Operation to save data into memory from register
@@ -65,21 +62,6 @@ enum {
 						// End - opcode
 	OPCODE_HALT			// Operation to stop execution
 };
-
-// Takes in opcode
-instruction instruction_init() {
-
-}
-
-// Takes instruction, returns binary
-uint16_t instruction_encode(instruction instr) {
-
-}
-
-// Takes binary, returns instruction
-instruction instruction_decode(uint16_t binary) {
-
-}
 
 // Registers
 // Function: stores temporary and neccisary data to use in computation
@@ -127,11 +109,11 @@ void cpu_init() {
 }
 
 void cpu_fetch() {
-	// Get instruction or data from memory, decode the instruction
+
 }
 
 void cpu_execute() {
-	// Execute instruction
+
 }
 
 int main() {
